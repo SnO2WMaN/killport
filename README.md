@@ -48,6 +48,14 @@ Run the following command to install killport using cargo. If you don't have car
 cargo install killport
 ```
 
+### Using Nix
+
+You can install via [Nix](https://nixos.org). See other installation method in [here](https://search.nixos.org/packages?channel=unstable&show=killport).
+
+```sh
+nix-shell -p killport
+```
+
 ### Binary Releases
 
 You can download the binary releases for different architectures from the [releases page](https://github.com/jkfran/killport/releases) and manually install them.
@@ -81,16 +89,16 @@ killport -s sigkill 8080
 ### Flags
 
 -s, --signal
-    Specify a signal name to be sent. (e.g. sigkill)
+Specify a signal name to be sent. (e.g. sigkill)
 
 -v, --verbose
-    Increase the verbosity level. Use multiple times for more detailed output.
+Increase the verbosity level. Use multiple times for more detailed output.
 
 -h, --help
-    Display the help message and exit.
+Display the help message and exit.
 
 -V, --version
-    Display the version information and exit.
+Display the version information and exit.
 
 ## Contributing
 
@@ -110,4 +118,3 @@ We'll review your pull request and provide feedback or merge your changes.
 ## License
 
 This project is licensed under the [MIT License](LICENSE). See the LICENSE file for more information.
-
